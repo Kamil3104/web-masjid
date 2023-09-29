@@ -1,59 +1,664 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;700&display=swap');
 * {
-    margin: 0;
-    padding: 0;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
 }
 
-
-body,
-html{
+body, 
+html {
     overflow-x: hidden;
 }
 body {
     font-family: 'Montserrat', sans-serif;
 }
-.d-none{
-    display: none !important;
-}
-.top-menu ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 15px;
-    line-height: 26px;
-}
 
-.top-menu ul li {
-    text-align: center;
-}
-.btn-rounded-full {
-    padding: 8px 19px;
-    border-radius: 50px;
-}
+.w-full{
+    width: 100%;
+    height: auto;
+}    
 
-.top-menu.btn-rounded-full {
-    margin-top: 10px;
-    display: inline-block;
-}
+@media (min-width: 320px){
+    .item-footer {
+        padding: 15px 0;
+    }
+    
+    .item-footer-1 {
+        padding-top: 0;
+        text-align: center;
+    }
+    
+    .logo-footer {
+        width: 200px;
+    }
+    
+    .item-footer h3 {
+        color: #fff;
+        position: relative;
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+    
+    .item-footer h3:after {
+        content: '';
+        width: 50px;
+        height: 5px;
+        background-color: #fff;
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+    }
+    
+    .item-footer-2 ul {
+        list-style: none;
+        color: #fff;
+    }
+    
+    .item-footer-2 i {
+        font-size: 25px;
+        width: 40px;
+    }
+    
+    .item-footer-2 ul li {
+        display: flex;
+        align-items: center;
+        margin-bottom: 16px;
+    }
+    
+    .item-footer-2 ul li:last-child {
+        margin-bottom: 0;
+    }
+    
+    .item-footer-3 iframe {
+        width: 100%;
+        height: 200px;
+    }
+    footer{
+        background: #0A993C url(../img/pattem-green.png) repeat;
+        padding: 40px 10%;
+    }
+    .d-destop {
+        display: none;
+    }
+    .description {
+        color: #fff;
+        padding: 30px 0;
+    }
+    
+    .description h3 {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    
+    a.btn-green {
+        background-color: #0A993C;
+        COLOR: #FFF;
+        text-decoration: none;
+        font-size: 14px;
+        padding: 10px;
+        border-radius: 5px;
+        margin-left: auto;
+        display: inline-block;
+    }
+    
+    .button-kegiatan {
+        text-align: right;
+    }
+    h2.title-section {
+        COLOR: #fff;
+        text-align: center;
+        font-size: 20px;
+        margin-bottom: 30px;
+        position: relative;
+    }
+    
+    h2.title-section:after {
+        content: '';
+        width: 60px;
+        height: 5px;
+        background-color: green;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-28px, 10px);
+    }
+    .kegiatan-terbaru-sec {
+        background-color: #262626;
+        border-top: 15px solid #0A993C;
+        padding: 40px 0;
+        position: relative;
+    }
+    
+    .kegiatan-terbaru-sec.swiper {
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    .kegiatan-terbaru-sec .swiper {
+        width: 80%;
+        margin: 0 auto;
+    }
+        .outer-swiper-kegiatan {
+            position: relative;
+            width: 80%;
+            margin: 0 auto;
+        }
+    section.infak-sec {
+        background-color: rgb(163 255 172 / 58%);
+    }
 
-.bg-green {
-    background-color: #0A993C;
+    .infak-section-left h2 {
+        font-size: 44px;
+        margin-bottom: 10px;
+        padding: 0 0;
+          
+    }
+    
+    .small-text {font-size: 35px;}
+    
+    .text-green {
+        color: #0A993C;
+    }
+    
+    .text-red {
+        color: #D60000;
+    }
+    
+    .infak-section-left h3 {
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+    
+    .infak-section-left article {
+        margin-bottom: 20px;
+    }
+    
+    .cta-infak {
+        display: block;
+        width: 100%;
+        background-color: #0A993C;
+        border: none;
+        color: #fff;
+        font-size: 26px;
+        font-weight: 700;
+        padding: 15px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    .infak-section-left {
+        margin-bottom: 30px;
+    }
+    
+    .infak-section-right img {
+        width: 80%;
+        border-radius: 15px;
+    }
+    
+    .infak-section-right img:last-child {
+        margin-left: auto;
+        display: block;
+        margin-top: -45px;
+    }
+    .vidio-section {
+        background-color: #262626;
+        padding: 50px 0;
+        border-top: 15px solid #0A993C;
+    }
+    
+    .wprapper-vidio {
+        position: relative;
+        padding-bottom: 56.25%;
+    }
+    
+    .wprapper-vidio iframe {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+    .welcomen-secetion__right img {
+        box-shadow: 0 3px 8px 1px rgb(0 0 0 / 50%);
+        border-radius: 15px;
+    }
+    .welcomen-secetion__left {
+        text-align: center;
+        color: #fff;
+        margin-bottom: 30px;
+    }
+    .outer-video {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .welcomen-secetion__left article {
+        margin: 15px 0;
+    }
+    
+    .btn-black {
+        background-color: #262626;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 14px;
+    }
+    
+    
+    .welcome-section {
+        width: 80%;
+        margin: 40px auto;
+        background: url(../img/pattem-green.png) no-repeat center;
+        background-size: cover;
+        background-blend-mode: multiply;
+        border-radius: 20px;
+        padding: 20px;
+    }
+    
+    p {
+        margin-bottom: 15px;
+    }
+    
+    p:last-child {
+        margin-bottom: 0;
+    }
+    
+    .hero-hadits 
+    {background-color: #262626;color: #fff;text-align: center;width: 300px;border-radius: 15px;margin: -16% auto 0;position: relative;z-index: 9999;padding: 20px;box-sizing: border-box;font-size: 12px;}
 
-nav {
+.hero-hadits img {
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    padding: 10px;
+    width: 37px;
 }
 
-.top-menu {
-    POSITION: FIXED;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.quote-left {
+    top: -15px;
+    left: 5%;
+}
+
+.quote-right {
+    right: 20px;
+}
+    .d-none{
+        display:none !important;
+    } 
+    .mySwiper {
+        border-bottom: 0.5em solid#0A993C;
+    }
+    .text-hero h6 {
+        font-weight: 400;
+    }
+    .swiper-slide:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: transparent;
+    }
+    .text-hero {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 99;
+    color: #fff;
+    text-align: center;
+    transform: translate(-90px, -50px);
+    }
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .swiper-slide {
+        height: 400px;
+        background-color: GRAY;
+    }
+    
+
+        
+    }
+    .hamburger svg {
+        width: 35px;
+    }
+    
+    .hamburger {
+        cursor: pointer;
+    }
+    .top-menu ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 15px;
+        line-height: 20px;
+    }
+    
+    .top-menu ul li {
+        text-align: center;
+        margin: 10px 0;
+        position: relative;
+    }
+    
+    a.btn-rounded-full {
+        padding: 8px 19px;
+        border-radius: 50px;
+    }
+    
+    .top-menu ul li.active:before {
+        content: '';
+        position: absolute;
+        bottom: -4px;
+        left: 20%;
+        height: 3px;
+        background-color: #0A993C;
+        width: 30%;
+        transform: translateX(50%);
+    }
+    .top-menu  .btn-rounded-full {
+        margin-top: 10px;
+        display: inline-block;
+    }
+    
+    .bg-green {
+        background-color: #0A993C;
+    }
+    nav {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 999;
+    }
+    
+    .close {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 9999999;
+        cursor: pointer;
+    }
+    img{
+        max-width: 100%;
+    }
+    .close svg {
+        width: 30px;
+    }
+    .top-menu {
+        position: fixed;
+        top: 0;
+        right: -100vw;
+        bottom: 0;
+        background-color: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        transition: 0.3s;
+    }
+    .wprapper-popup {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999999;
+        transform: scale(0);
+        transition: .3s ease-in-out;
+    }
+    .wprapper-popup.show{
+        transform: scale(1);
+    }
+    .close-popup {
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        cursor: pointer;
+    }
+    .content-popup{
+        width: 25em;
+    }
+    .content-popup {
+        color: #000;
+        position: relative;
+        z-index: 2;
+        background-color: #fff;
+        width: 93%;
+        padding: 30px 20px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .backdrop {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0,0,0.9);
+        z-index: 1;
+    }
+
+
+@media (min-width: 768px){
+    .swiper-kegiatan .swiper-slide{
+            height: auto;
+            object-fit: cover;
+        }
+     
+    section.infak-sec {
+        padding: 40px 0;
+        background-color: rgb(163 255 172 / 58%);
+    }
+    
+    .wprapper-infak-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+ 
+    .infak-section-left {
+        width: 50%;
+        flex-shrink: 0;
+        margin:0 auto;
+        
+    }
+    .welcomen-secetion__right img {
+        width: 100%;
+    }
+    .hero-hadits {
+        background-color: #262626;
+        color: #fff;
+        text-align: center;
+        width: 348px;
+        border-radius: 15px;
+        margin: -8% auto 10px;
+        position: relative;
+        z-index: 9999;
+        padding: 40px;
+        box-sizing: border-box;
+        font-size: 12px;
+    }
+    .text-hero {
+        top: 58%;
+        transform: translate(-180px, -50px);
+        }
+        .content-popup {
+    
+            width: 50%;
+        
+        }
+}
+
+
+@media (min-width: 1024px){
+    .outer-swiper-kegiatan .per-button-next, 
+    .outer-swiper-kegiatan .swiper-button-prev {
+        position: absolute;
+        top: var(--swiper-navigation-top-offset,50%);
+        width: 46px;
+        height: 30px;
+        margin-top: calc(0px - (var(--swiper-navigation-size)/ 2));
+        z-index: 10;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--swiper-navigation-color,var(--swiper-theme-color));
+    }
+    .swiper-kegiatan-button-next:after
+    {
+        content: '';
+        width: 46px;
+        height: 51px;
+        background: url(../img/panah\ kanan.svg) no-repeat center;
+        background-size: contain;
+        font-family: unset;
+        position: absolute;
+        right: 0;
+    }
+    .swiper-kegiatan-button-prev:after
+    {
+        content: '';
+        width: 46px;
+        height: 51px;
+        background: url(../img/kiri.svg) no-repeat center;
+        background-size: contain;
+        font-family: unset;
+        position: absolute;
+        right: 0;
+    }
+    
+    .d-mobile{
+        display: none;
+    }
+    .d-destop{
+        display: block;
+    }
+    .wprapper-infak-section {
+        width: 890px;
+    }
+
+    .welcomen-secetion__right img {
+        box-shadow: 0 3px 8px 1px rgb(0 0 0 / 50%);
+        border-radius: 15px;
+    }
+    
+    .welcomen-secetion__right img {
+        width: 100%;
+    }
+    
+    .welcome-section {
+        width: 890px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .outer-video {
+    width: 700px;
+}
+    .welcomen-secetion__left {
+        margin-bottom: 0;
+        margin-right: 40px;
+    }
+    .text-hero {
+        top: 53%;
+        transform: translate(-500px, -50px);
+    }
+    .text-hero h2 {
+        font-size: 55px;
+    }
+    
+    .text-hero {
+        width: 100%;
+    }
+    .hamburger {
+        display: none;
+    }
+    .top-menu {
+        right: 0;
+        position: relative;
+        width: auto;
+        background-color: transparent;
+    }
+    
+    .top-menu ul li {
+        display: inline-block;
+        margin: 0 0 0 30px;
+    }
+    
+    .close {
+        display: none;
+    }
+    
+    path {
+        display: none;
+    }
+
+}
+
+
+@media (min-width: 1200px){
+    .wprapper-infak-section {
+        width: 1040px;
+    }
+    .welcome-section {
+        width: 1105px;
+
+    }
+    .top-menu ul li.active:before {
+        content: '';
+        position: absolute;
+        bottom: -5px;
+        left: -23%;
+        height: 3px;
+        background-color: #0A993C;
+        width: 75%;
+        transform: translateX(50%);
+    }
+    .text-hero h2 {
+        font-size: 66px;
+    }
+    .text-hero h6 {
+        font-size: 20px;
+    }
+    .text-hero {
+        top: 52%;
+        transform: translate(-570px, -50px);
+    }
+    .swiper-slide{
+    height: 700px;
+}
+    .container {
+        max-width: 1140px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .mySwiper{
+    border-bottom: 1em solid #0A993C;
+}
+
+.hero-hadits {
+   
+    width: 600px;
+    margin: -5% auto 0;
+  
+}
+
+}
+@media (min-width: 1400px){
+    .swiper-slide{
+        height: 900px;
+    }
 }

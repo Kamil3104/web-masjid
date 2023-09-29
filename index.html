@@ -3,43 +3,294 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Mussolla AR-Rahman</title>
+    <title>Mushalla AR-Rahman</title>
 </head>
 <body>
-    <nav>
+    <nav class="container">
         <div class="logo">
             <img src="img/logo.svg" alt="logo">
         </div>
 
+        
         <div class="hamburger">
-                <svg xmlns="http://www.w3.org/2000/svg"
-                 fill="none" 
-                 viewBox="0 0 24 24" 
-                 stroke-width="1.5" 
-                 stroke="*fff" 
-                 
-                
-                 <path stroke-linecap="round" 
-                 stroke-linejoin="round" 
-                 d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-                 />
-            </svg>
-              
-        </div>
+            <svg
+             xmlns="http://www.w3.org/2000/svg"
+            fill="none" viewBox="0 0 24 24" 
+            stroke-width="1.5" 
+            stroke="#fff" 
+        >
 
-    <div class="top-menu d-none">
-        <ul>
-            <li><a href="#">Branda</a></li>
-            <li><a href="#">Kegiatan</a></li>
-            <li><a href="#">Gallery</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#"class="btn-rounded-full bg-green">Krim infak</a></li>
-        </ul>
-     </div>
-    </nav>
-    <div class="hero">
-        <img src="img/hero-1.png" alt="hero"/>
+            <path
+             stroke-linecap="round" 
+             stroke-linejoin="round" 
+             d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" 
+             />
+          </svg>
+          </div>
+        <div class="top-menu">
+            <div class="close">
+                <svg 
+                   xmlns="http://www.w3.org/2000/svg" 
+                   fill="none" 
+                   viewBox="0 0 24 24" 
+                   stroke-width="1.5" 
+                   stroke="#fff" 
+                   class="w-6 h-6">
+
+                <path 
+                    stroke-linecap="round" 
+                    stroke-linejoin="round" 
+                    d="M6 18L18 6M6 6l12 12" 
+                    />
+                </svg>
+                  
+            </div>
+           <ul>
+                <li class="active"><a href="#">Branda</a></li>
+                <li><a href="#">Kegiatan</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#"class="btn-rounded-full bg-green">Krim infak</a></li>
+          </ul>
+         </div>
+     </nav>
+     <section class="hero">
+          <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+      <img src="img/mushlla 1.jpeg" alt="img slide">
+      <div class="text-hero">
+        <h2>MUSHALLA AR-RAHMAN</h2>
+        <h6>Ladang Kaladi Rt. 04 Rw. 06 Kel. Sungai Sapih Kec. Kuranji Kota Padang</h6>
+      </div>
+      </div>
+      <div class="swiper-slide">
+      <img src="img/mushlla 2.jpeg" alt="img slide">
+      <div class="text-hero">
+        <h2>MUSHALLA AR-RAHMAN</h2>
+        <h6>Ladang Kaladi Rt. 04 Rw. 06 Kel. Sungai Sapih Kec. Kuranji Kota Padang</h6>
+      </div>
+      </div>
+      <div class="swiper-slide">
+      <img src="img/mushlla 3.jpeg" alt="img slide">
+      <div class="text-hero">
+        <h2>MUSHALLA AR-RAHMAN</h2>
+        <h6>Ladang Kaladi Rt. 04 Rw. 06 Kel. Sungai Sapih Kec. Kuranji Kota Padang</h6>
+      </div>
+      </div>
+     
     </div>
-</body>
-</html>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+     </section> 
+    <section class="hero-hadits">
+      <img src="img/66.svg" alt="quote" class="quote-left">
+    
+      <p>Barangsiapa membangun masjid karena Allah, meski seukuran lubang tempat burung qatha bertelur, maka Allah membangun untuknya rumah di surga” (HR Ahmad dan Ibnu Abi Syaibah)</p>
+      <img src="img/99.svg" alt="quote" class="quote-right">
+    </section>
+     
+    <!-- welcome section -->
+    <section class="welcome-section">
+      <div class="welcomen-secetion__left">
+        <img src="img/assalamu'alaikum.svg" alt="assalamualaikum">
+        <article>
+          <p>Selamat Datang di website resmi Mushalla Ar-Rahman Ladang Kaladi.</p>
+          <p>Di website ini Bapak/Ibu dapat melihat kegiatan-kegiatan kami dan juga bisa menyalurkan infak/Sadaqah terbaik Bapak/Ibu.</p>
+        </article>
+        <button class="btn-black show-popup-infak">KIRIM INFAK</button>
+      </div>
+      <div class="welcomen-secetion__right">
+        <img src="img/pengurus.png" alt="pengurus">
+      </div>
+    </section>
+          <!--Vidio Section -->
+    <section class="vidio-section">
+      <div class="outer-video">
+      <div class="wprapper-vidio">
+        <iframe 
+        width="711" height="400" src="https://www.youtube.com/embed/Kkelp6xnOBo" title="TIPS MENEMUKAN JODOH DUNIA AKHIRAT - Ustadz. Abdul Somad. Lc., MA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+       </iframe>
+      </div>
+    </div>
+    </section>
+
+<!-- infak section -->
+<section class="infak-sec">
+  <div class="wprapper-infak-section">
+    <div class="infak-section-left">
+      <h2><span class="small-text">Siapa bilang</span><span class="text-green"> harta </span class="text-green"> tak dibawa<span class="text-red"> mati </span>???</h2>
+      <h3>Bisa kok,Sedekahin...!!!</h3>
+      <article>
+        <p>
+          “Apabila manusia itu meninggal dunia maka terputuslah segala amalnya kecuali tiga: yaitu sedekah jariyah, ilmu yang bermanfaat atau anak sholeh yang mendoakan kepadanya.” 
+        </p>
+         <p>
+          (HR Muslim)
+         </p>
+      </article>
+      <button class="cta-infak show-popup-infak">INFAK NOW</button>
+      
+    </div>
+    <div class="infak-section-right">
+          <img src="img/poto atas.png" alt="poto">
+          <img src="img/mas.png.png" alt="poto">
+    
+  </div>
+
+</section>
+
+
+<!-- kegiatan terbaru -->
+<section class="kegiatan-terbaru-sec">
+  <h2 class="title-section">KEGIATAN TERBARU</h2>
+
+  <!-- Swiper -->
+ 
+    <div class="swiper-kegiatan-button-next d-dekstop"></div>
+  <div class="swiper-kegiatan-button-prev d-dekstop"></div>
+    <div class="swiper swiper-kegiatan">
+     <div class="swiper-pagination d-mobile"></div>
+    <div class="swiper-wrapper">
+      <!-- Item kegiatan -->
+      <div class="swiper-slide">
+        <div class="img-kegiatan">
+          <img src="./img/mesjid indah.jpg" alt="1111" class="w-full">
+        </div>
+        <div class="description">
+          <h3>Khutbah Jum'at Mesjid Agung Al-Muttaqin</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae libero ultricies, aliquam ...</p>
+        </div>
+        <div class="button-kegiatan">
+          <a href="#" class="btn-green">LEBIH DETAIL</a>
+        </div>
+    </div>
+
+     <!-- Item kegiatan -->
+     <div class="swiper-slide">
+      <div class="img-kegiatan">
+        <img src="./img/mesjid indah.jpg" alt="1111" class="w-full">
+      </div>
+      <div class="description">
+        <h3>Acara wirid remaja SMA/SMK </h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae libero ultricies, aliquam ...</p>
+      </div>
+      <div class="button-kegiatan">
+        <a href="#" class="btn-green">LEBIH DETAIL</a>
+      </div>
+  </div>
+     <!-- Item kegiatan -->
+     <div class="swiper-slide">
+      <div class="img-kegiatan">
+        <img src="./img/mesjid indah.jpg" alt="1111" class="w-full">
+      </div>
+      <div class="description">
+        <h3>Acara Wirid Yasin Ibu-ibu setiap hari Jum'at Mesjid Agung-Almuttaqin</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae libero ultricies, aliquam ...</p>
+      </div>
+      <div class="button-kegiatan">
+        <a href="#" class="btn-green">LEBIH DETAIL</a>
+      </div>
+  </div>
+  
+       <!-- Item kegiatan -->
+       <div class="swiper-slide">
+        <div class="img-kegiatan">
+          <img src="./img/mesjid indah.jpg" alt="1111" class="w-full">
+        </div>
+        <div class="description">
+          <h3>Acara Tausiah Mesjid Agung Al-Muttaqin</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae libero ultricies, aliquam ...</p>
+        </div>
+        <div class="button-kegiatan">
+          <a href="#" class="btn-green">LEBIH DETAIL</a>
+        </div>
+    </div>
+
+         <!-- Item kegiatan -->
+         <div class="swiper-slide">
+          <div class="img-kegiatan">
+            <img src="./img/mesjid indah.jpg" alt="1111" class="w-full">
+          </div>
+          <div class="description">
+            <h3>Acara Maulid Nabi Muhammad Saw Mesjid Agung Al-Muttaqin</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae libero ultricies, aliquam ...</p>
+          </div>
+          <div class="button-kegiatan">
+            <a href="#" class="btn-green">LEBIH DETAIL</a>
+          </div>
+      </div>
+
+
+</div>
+</div>
+  </div>
+</section>
+
+
+
+<!-- popup krim infak -->
+<div class="wprapper-popup">
+  <div class="backdrop"></div>
+  <div class="content-popup">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000"
+     class="close-popup w-6 h-6">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+    </svg>
+    
+    <div class="content-popup__left">
+      <p>Nama bank</p>
+      <p>No. Rekening</p>
+      <p>Atas Nama</p>
+    </div>
+    <div class="content-popup__right">
+      <p>:Bank BCA</p>
+      <p>:1234567 89019</p>
+      <p>:Mushalla Ar-Rahman</p>
+    </div>
+  </div>
+</div>
+
+    
+<footer>
+  <div class="container-fluid">
+    <div class="item-footer item-footer-1">
+      <img src="./img/logo besar.svg" alt="logo" class="logo-footer">
+    </div>
+    <div class="item-footer item-footer-2">
+      <h3>Contact</h3>
+      <ul>
+        <li><i class="fab fa-whatsapp"></i><span> 0813-6438-4575 </span></li>
+        <li><i class="fab fa-twitter"></i><span>  @Ar-Rahman </span></li>
+        <li><i class="fab fa-facebook"></i><span> mushalla_ar_rahman </span></li>
+        <li><i class="fas fa-envelope"></i><span> m.arrahman@gmail.com </span></li>
+      </ul>
+      
+    </div>
+    <div class="item-footer item-footer-3">
+      <h3>Lokasi mushalla</h3>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2042724.8124373958!2d99.41363211860448!3d0.44700169100047477!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d507e6a6e0f7f7%3A0x28948582c9f34158!2sMusholla%20Ar%20Rahman!5e0!3m2!1sid!2sid!4v1695963429620!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  
+    </div>
+  </div>
+</footer>
+
+
+     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+  crossorigin="anonymous">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script src="js/script.js"></script>
+
+       </body>
+      </html>
